@@ -92,3 +92,15 @@ console.log(countVowels("Ostad"));
 
 
 
+
+//Problem - 8
+function findAverage(arr) {
+    if (!Array.isArray(arr) || arr.length === 0) {
+        throw new Error('Input must be a non-empty array of numbers');
+    }
+    const sum = arr.reduce((acc, num) => acc + num, 0);
+    return sum / arr.length;
+}
+
+const numbers8 = [5, 10, 15, 20];
+console.log(findAverage(numbers8)); 
