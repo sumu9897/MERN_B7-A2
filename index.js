@@ -43,3 +43,16 @@ const numbers4 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const evenNumbers = filterEvenNumbers(numbers4);
 console.log(evenNumbers);
 
+
+//Problem -5
+function sortArrayDescending(arr) {
+    if (!Array.isArray(arr)) {
+        throw new TypeError('Input must be an array of numbers');
+    }
+    return arr.slice().sort((a, b) => b - a);
+}
+
+const numbers5 = [5, 2, 9, 1, 7];
+const sortedNumbers = sortArrayDescending(numbers5);
+console.log(sortedNumbers);
+
