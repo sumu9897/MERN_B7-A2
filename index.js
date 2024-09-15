@@ -56,3 +56,14 @@ const numbers5 = [5, 2, 9, 1, 7];
 const sortedNumbers = sortArrayDescending(numbers5);
 console.log(sortedNumbers);
 
+//Problem - 6
+function lowercaseFirstLetter(str) {
+    if (typeof str !== 'string') {
+        throw new TypeError('Input must be a string');
+    }
+    return str.charAt(0).toLowerCase() + str.slice(1);
+}
+
+console.log(lowercaseFirstLetter("Mohammad Sumon"));
+console.log(lowercaseFirstLetter("MernBatch"));
+
