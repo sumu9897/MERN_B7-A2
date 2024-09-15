@@ -7,3 +7,14 @@ function calculateDifference(a, b) {
     return a - b;
 }
 console.log(calculateDifference(10, 4));
+
+
+//Problem - 2
+function isOdd(num) {
+    if (typeof num !== 'number') {
+        throw new TypeError('Input must be a number');
+    }
+    return num % 2 !== 0;
+}
+console.log(isOdd(5));
+
