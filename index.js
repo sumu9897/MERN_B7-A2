@@ -67,3 +67,28 @@ function lowercaseFirstLetter(str) {
 console.log(lowercaseFirstLetter("Mohammad Sumon"));
 console.log(lowercaseFirstLetter("MernBatch"));
 
+//Problem - 7
+
+function countVowels(str) {
+    if (typeof str !== 'string') {
+        throw new TypeError('Input must be a string');
+    }
+
+    const vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']);
+    let count = 0;
+
+    for (const char of str) {
+        if (vowels.has(char)) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+
+console.log(countVowels("Mohammad Sumon"));
+console.log(countVowels("Ostad"));
+
+
+
