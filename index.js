@@ -30,3 +30,16 @@ const numbers = [5, 2, 9, 1, 7];
 console.log(findMin(numbers));
 
 
+
+//Problem - 4
+function filterEvenNumbers(arr) {
+    if (!Array.isArray(arr)) {
+        throw new TypeError('Input must be an array of numbers');
+    }
+    return arr.filter(num => num % 2 === 0);
+}
+
+const numbers4 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const evenNumbers = filterEvenNumbers(numbers4);
+console.log(evenNumbers);
+
